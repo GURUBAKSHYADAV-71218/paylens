@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-line;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-paper text-ink;
+    font-feature-settings: "cv11", "ss01";
+  }
+  ::selection {
+    @apply bg-emerald/20;
+  }
+}
+
+@layer components {
+  /* A leader line between a label and a value, like an invoice/receipt row. */
+  .ledger-row {
+    @apply flex items-baseline gap-3 py-3;
+  }
+  .ledger-label {
+    @apply flex-1 whitespace-nowrap text-[13px] text-ink-soft;
+    border-bottom: 1.5px dotted #C9C6BB;
+    transform: translateY(-4px);
+  }
+  .ledger-value {
+    @apply font-mono text-[15px] font-medium tabular-nums text-ink;
+  }
+
+  /* A card with the quiet paper-and-border language used across PAYLENS. */
+  .paper-card {
+    @apply rounded-xl2 border border-line bg-paper-raised shadow-card;
+  }
+
+  /* Perforated top edge, evoking a torn receipt. */
+  .perforated-top {
+    position: relative;
+  }
+  .perforated-top::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 0;
+    right: 0;
+    height: 8px;
+    background-image: radial-gradient(circle at 8px 0, transparent 7px, #FAF9F5 7.5px);
+    background-size: 16px 16px;
+    background-repeat: repeat-x;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
