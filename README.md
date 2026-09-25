@@ -176,12 +176,4 @@ advice. Real company salary structures vary — some fold bonuses, gratuity
 or NPS into CTC differently — so treat every figure here as an estimate,
 not a payslip.
 
-## Future Scope
 
-Not implemented in this version — ideas for later:
-
-- Payslip PDF analysis
-- Salary offer comparison (compare two CTC offers side by side)
-- Advanced tax planning (80C/80D optimization suggestions)
-- Salary history tracking over time
-- AI-powered salary explanation
