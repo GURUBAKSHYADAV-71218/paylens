@@ -168,7 +168,13 @@ Section 80C (via Employee PF) and the professional-tax deduction are
 modelled for the Old Regime — no HRA exemption, 80D, home loan interest,
 etc.; figures assume a resident individual taxpayer under 60.
 
+### Disclaimer
 
+PAYLENS provides an estimate for educational purposes and is not an
+official government tax calculator or a substitute for professional tax
+advice. Real company salary structures vary — some fold bonuses, gratuity
+or NPS into CTC differently — so treat every figure here as an estimate,
+not a payslip.
 
 ## Future Scope
 
